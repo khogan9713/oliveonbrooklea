@@ -23,7 +23,7 @@ nav ul li a {
 	text-transform:  uppercase;
 	padding-left: 10px;
 	display: block;
-	
+
 }
 
 #navBtn {
@@ -36,14 +36,14 @@ nav ul li a {
 	right: 10px;
 	text-align: center;
 	color: purple;
-		
+
 }
 
 .mainimage {
 	width: 100%;
 	height: 267px;
 	position: relative;
-	
+
 }
 
 .mainimage img {
@@ -62,9 +62,9 @@ nav ul li a {
 	padding-left: 40px;
 	padding-right: 40px;
 	text-align: center;
-	position: absolute; 
+	position: absolute;
 	bottom: 35px;
-	
+
 }
 
 .showcase {
@@ -155,6 +155,67 @@ aside h3 {
 	padding-left: 140px;
 }
 
+/* slider on project page */
+
+	div.slider-crop {
+		background-color: white;
+		width: 100%;
+		height: 320px;
+		overflow: hidden;
+		position:relative;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+
+ul.slider-train {
+	background-color: white;
+	width: 2010px;
+	height: 280px;
+}
+
+ul.slider-train li {
+	width: 320px;
+	height: 250px;
+	float: left;
+	margin-right: 15px;
+	background-color: yellow;
+}
+
+ul.slider-train li img {
+	width: 100%;
+}
+
+.slider-btn {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 280px;
+	z-index: 500;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+	cursor: pointer;
+}
+
+
+#slider-previous {
+	left: 0px;
+}
+
+#slider-next {
+	right: 0px;
+}
+
+ul.slider-train li img {
+	width: 100%;
+}
+
+ul.slider-train li p {
+	text-align: center;
+	padding: 20px;
+}
+
 footer {
 	height: 350px;
 	background-color: #4d004c;
@@ -191,7 +252,7 @@ footer #copyright {
 	width: 100%;
 	height: 500px;
 	overflow: hidden;
-	
+
 }
 
 .slider-btn {
@@ -240,7 +301,7 @@ ul.slider-train li h3 {
 
 
 
-	
+
 }
 /*--------------------------------end of mobile style rules----------------------------------*/
 
@@ -277,7 +338,7 @@ nav ul li {
 	height: 400px;
 }
 
-.mainimage h1 { 
+.mainimage h1 {
 bottom: 160px;
 
 }
@@ -327,7 +388,7 @@ aside {
 }/*--------------------------------end of tablet style rules----------------------------------*/
 
 @media all and (min-width: 980px) {
-	
+
 header img {
 	width: 10%;
 	float: left;
