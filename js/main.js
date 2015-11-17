@@ -1,12 +1,43 @@
 $(document).ready(function() {
 	// alert("hello");
 
-		$("navBtn").click(function(){
+//nav slide toggle
+		$("#navBtn").click(function(){
 			$("nav").slideToggle();
 			$(this).toggleClass("navActive");
 		}); //click method end
 
+
+//image hover styles
+		$(".gridstyle").hover(function() {
+			$(this).find("img").animate({
+				"width": "320px",
+				"height": "214px",
+				"top": "-10px",
+				"left": "-10px",
+				"opacity" : 0.4
+			}); //animate
+		}, function() {
+			$(this).find("img").animate({
+				"width" : "300px",
+				"height" : "194px",
+				"top" : "0px",
+				"left" : "0px",
+				"opacity" : 1.0
+			}); //animate
+		}); //hover
+
+
 		var clickCount=0;
+		var sliderTotal = $("ul.slider-train li").size();
+		console.log(sliderTotal);
+
+
+
+
+
+//product slider
+	/*	var clickCount=0;
 		var sliderTotal = $("ul.slider-train li").size();
 		console.log(sliderTotal);
 
@@ -50,9 +81,7 @@ $(document).ready(function() {
 				checkArrows(clickCount);
 			} //end conditional
 		});
+	}); //click method end */
 
 
-	}); //click method end
-
-
-});
+}); //ready function end
