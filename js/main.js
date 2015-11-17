@@ -2,12 +2,18 @@ $(document).ready(function() {
 	// alert("hello");
 
 //nav slide toggle
-		$("#navBtn").click(function(){
 
-		$("navBtn").click(function(){
+		/*$("navBtn").click(function() {
 			$("nav").slideToggle();
 			$(this).toggleClass("navActive");
-		}); //click method end
+		}); //click method end*/
+
+$("#navBtn").click(function() {
+		$("nav").slideToggle();
+		$(this).toggleClass("navActive");
+
+
+}); //click method end
 
 
 //image hover styles
@@ -39,7 +45,7 @@ $(document).ready(function() {
 
 
 //product slider
-	var clickCount=0;
+	/*var clickCount=0;
 		var sliderTotal = $("ul.slider-train li").size();
 		console.log(sliderTotal);
 
@@ -83,7 +89,7 @@ $(document).ready(function() {
 				checkArrows(clickCount);
 			} //end conditional
 		});
-	}); //click method end 
+	}); //click method end */
 
 
 var photoHeight, headlineHeight, photoTop; //initialize outside the function so it constantly  (variable scope-global variables)
