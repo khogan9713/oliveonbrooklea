@@ -141,20 +141,20 @@ aside h3 {
 
 .photolinks {
 	width: 100%;
-	height: 197px;
+	/*height: 197px;*/
 	position: relative;
 	margin-bottom: 35px;
 	margin-top: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	/*padding-top: 20px;
+	padding-bottom: 20px;*/
+	float: left;
 }
 
 .photolinks img {
-	width: 80%;
-	min-height: 80%;
-	position: absolute;
-	z-index: -100;
-	padding-left: 40px;
+	width: 100%;
+	/*min-height: 80%;*/
+	/*position: absolute;*/
+	/*padding-left: 40px;*/
 }
 
 .photolinks h3 {
@@ -166,9 +166,10 @@ aside h3 {
 	text-shadow: 1px 1px black;
 	position: absolute;
 	z-index: 500;
-	height: 197px;
-	line-height: 197px;
-	padding-left: 140px;
+	/*height: 197px;*/
+	/*padding-left: 140px;*/
+	width: 100%;
+	text-align: center;
 }
 
 h4 {
@@ -315,64 +316,12 @@ footer #copyright {
 	text-align: center;
 }
 
+/*--lemon oil page-->*/
 
-
-
-
-
-
-
-/*div.slider-crop {
-	background-color: blue;
+main img {
 	width: 100%;
-	height: 500px;
-	overflow: hidden;
-
 }
 
-.slider-btn {
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	top: 280px;
-	z-index: 500;
-	font-size: 30px;
-	color: black;
-	text-align: center;
-	background-color: red;
-	cursor: pointer;
-}
-
-
-#slider-previous {
-	left: 0px;
-}
-
-#slider-next {
-	right: 0px;
-}
-
-ul.slider-train {
-	background-color: orange;
-	width: 1500px;
-	height: 300px;
-}
-
-ul.slider-train li {
-	width: 320px;
-	height: 300px;
-	float: left;
-	margin-right: 30px;
-	background-color: yellow;
-}
-
-ul.slider-train li img {
-	width: 100%;
-	padding: 28px;
-}
-ul.slider-train li h3 {
-	text-align: center;
-}*/
 
 
 
@@ -432,10 +381,10 @@ aside {
 	margin-top: 15px;
 }
 
-.threeimages {
+/*.threeimages {
 	width: 100%;
 	height: 300px;
-	/*position: relative;*/
+	/*position: relative;
 }
 
 .threeimages img {
@@ -457,7 +406,7 @@ aside {
 
 .photolinks h3 {
 	padding-left: 0px;
-}
+}*/
 
 .gridspace {
 	min-height: 800px;
@@ -517,9 +466,14 @@ nav ul {
 	width: 100%;
 }
 .photolinks {
-	width: 30%;
+	width: 32%;
+	/*height: 195px;
+	position: relative;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	padding-top: 40px;
+	padding-bottom: 2px;*/
 }
-
 .gridspace {
 	min-height: 650px;
 	/*padding-top: 20px;
@@ -529,6 +483,13 @@ nav ul {
 }
 footer {
 	width: 100%;
+}
+
+/*--lemon oil page-->*/
+
+main img {
+	width: 100%;
+	float: left;
 }
 
 

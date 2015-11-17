@@ -3,6 +3,8 @@ $(document).ready(function() {
 
 //nav slide toggle
 		$("#navBtn").click(function(){
+
+		$("navBtn").click(function(){
 			$("nav").slideToggle();
 			$(this).toggleClass("navActive");
 		}); //click method end
@@ -37,7 +39,7 @@ $(document).ready(function() {
 
 
 //product slider
-	/*	var clickCount=0;
+	var clickCount=0;
 		var sliderTotal = $("ul.slider-train li").size();
 		console.log(sliderTotal);
 
@@ -81,7 +83,30 @@ $(document).ready(function() {
 				checkArrows(clickCount);
 			} //end conditional
 		});
-	}); //click method end */
+	}); //click method end 
 
 
-}); //ready function end
+var photoHeight, headlineHeight, photoTop; //initialize outside the function so it constantly  (variable scope-global variables)
+
+function resizePhotolinks() {
+	photoHeight = $(".photolinks").height();
+	headlineHeight = $(".photolinks h3").height();
+	photoTop = (photoHeight - headlineHeight)/2;
+	$(".photolinks h3").css({
+		"top" : photoTop
+
+	}); //css
+
+
+} // resize photolinks
+
+$(window).resize(function () {
+		resizePhotolinks();
+
+}); //resize
+
+resizePhotolinks(); //need to put on the outside of the function so it gets called no matter what
+
+
+}); //get ready method
+
