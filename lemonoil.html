@@ -20,21 +20,22 @@
 	</head>
 
 	<body>
-		<header>
-				<img itemprop="logo" src="images/logo.jpg" alt="Olive on Brooklea"/>
+		<div class="navcontainer">
+			<header> 
+				<a href="index.html"><img itemprop="logo" src="images/logo.jpg" alt="Olive on Brooklea"/></a>
 				<a href="#" id="navBtn"><i class="fa fa-bars"></i></a>
+			</header>
 
-		</header>
-
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="recipes.html">Recipes</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
-			</ul>
-		</nav>
+			<nav> 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="products.html">Recipes</a></li>
+					<li><a href="about.html">About</a></li>
+					<li id="contact"><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div> <!--navcontainer-->
 
 		<div class="clearfix"></div>
 
@@ -73,21 +74,23 @@
 			</div> <!--buttons-->
 			
 			<div class="clearfix"></div>
-		
-			<p>Fayetteville Location <br />
-				205 Brooklea Dr. <br />
-				Fayetteville, NY 13066 <br />
-				315-637-2070
-			</p>
 
-			<p>Downtown Location <br />
-				116 West Jefferson St. <br />
-				Syracuse, NY 13202 <br />
-				315-475-2070
-			</p>
+
+			<div class="footerlocations">
+				<p class="footerfay">Fayetteville Location <br />
+					205 Brooklea Dr. <br />
+					Fayetteville, NY 13066 <br />
+					315-637-2070
+				</p>
+
+				<p class="footerdown">Downtown Location <br />
+					116 West Jefferson St. <br />
+					Syracuse, NY 13202 <br />
+					315-475-2070
+				</p>
+			</div>
 
 			<p id="copyright">Copyright 2015</p>
-
 		</footer>
 
 

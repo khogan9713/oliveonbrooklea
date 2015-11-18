@@ -20,27 +20,30 @@
 	</head>
 
 	<body>
-		<header> <!--put container on this-->
-			<a href="index.html"><img itemprop="logo" src="images/logo.jpg" alt="Olive on Brooklea"/></a>
-			<a href="#" id="navBtn"><i class="fa fa-bars"></i></a>
-		</header>
 
-		<nav> <!--put container on this-->
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="products.html">Recipes</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contactus.html">Contact Us</a></li>
-			</ul>
-		</nav>
+		<div class="navcontainer">
+			<header> 
+				<a href="index.html"><img itemprop="logo" src="images/logo.jpg" alt="Olive on Brooklea"/></a>
+				<a href="#" id="navBtn"><i class="fa fa-bars"></i></a>
+			</header>
+
+			<nav> 
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="products.html">Recipes</a></li>
+					<li><a href="about.html">About</a></li>
+					<li id="contact"><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div> <!--navcontainer-->
 
 	<div class="clearfix"></div>
 
 	<div class="mainimage"> <!--put container on this-->
 				<img id="store" src="images/store.jpg" alt="#"/>
-				<h1>Award Winning Olive Oil and Vinegar Shop in New York</h1>
-		</div> <!--main image div-->
+				<h1>Award Winning Olive Oil and Vinegar Shop in New York</h1>	
+	</div> <!--main image div-->
 	
 	<div class="container">	
 		
@@ -58,7 +61,8 @@
 
 	<aside>
 		<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<h2>Address</h2>
+			<h2>Locations</h2>
+				<p class="location">Downtown Location</p>
 				<p>
 					<span itemprop="streetAddress">116 West Jefferson St.</span> <br />
 					<span itemprop="addressLocality">Syracuse </span>
@@ -68,8 +72,18 @@
 				<p>
 					<span itemprop="telephone">315-475-2070</span>
 				</p>
+		</div> <!-- schema address -->
+			<div class="hours">
+				<p>
+					<time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fr 06:30-17:00">Monday-Friday 11:00am-6:00pm</time> <br />
+					<time itemprop="openingHours" datetime="Sa 08:00-15:00">Saturday 10:00am-4:00pm</time> <br />
+					<time itemprop="openingHours" datetime="Su 08:00-15:00">Sunday closed</time>
+				</p>
+			</div> <!--hours-->
 
 			<br />
+		<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<p class="location">Fayetteville Location</p>
 			<p>
 				<span itemprop="streetAddress">205 Brooklea Dr.</span> <br />
 				<span itemprop="addressLocality">Fayettville </span>
@@ -79,9 +93,8 @@
 			<p>
 				<span itemprop="telephone">315-637-2070</span>
 			</p>
-			</div> <!-- schema address -->
+		</div> <!-- schema address -->
 			<div class="hours">
-				<h2>Hours</h2>
 				<p>
 					<time itemprop="openingHours" datetime="Mo,Tu,We,Th,Fr 06:30-17:00">Monday-Friday 11:00am-6:00pm</time> <br />
 					<time itemprop="openingHours" datetime="Sa 08:00-15:00">Saturday 10:00am-4:00pm</time> <br />
@@ -91,6 +104,7 @@
 
 
 	</aside>
+	</div> <!--container-->
 
 	<div class="clearfix"></div>
 
@@ -116,10 +130,6 @@
 		<div class="clearfix"></div>
 
 
-	</div> <!--container-->
-
-
-
 		<footer>
 			<div class="buttons">
 				<a href="#" id="SocialBtn"><i class="fa fa-facebook"></i></a>
@@ -128,18 +138,21 @@
 			</div> <!--buttons-->
 			
 			<div class="clearfix"></div>
-		
-			<p>Fayetteville Location <br />
-				205 Brooklea Dr. <br />
-				Fayetteville, NY 13066 <br />
-				315-637-2070
-			</p>
 
-			<p>Downtown Location <br />
-				116 West Jefferson St. <br />
-				Syracuse, NY 13202 <br />
-				315-475-2070
-			</p>
+
+			<div class="footerlocations">
+				<p class="footerfay">Fayetteville Location <br />
+					205 Brooklea Dr. <br />
+					Fayetteville, NY 13066 <br />
+					315-637-2070
+				</p>
+
+				<p class="footerdown">Downtown Location <br />
+					116 West Jefferson St. <br />
+					Syracuse, NY 13202 <br />
+					315-475-2070
+				</p>
+			</div>
 
 			<p id="copyright">Copyright 2015</p>
 
