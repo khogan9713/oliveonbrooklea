@@ -3,16 +3,9 @@ $(document).ready(function() {
 
 //nav slide toggle
 
-		/*$("navBtn").click(function() {
-			$("nav").slideToggle();
-			$(this).toggleClass("navActive");
-		}); //click method end*/
-
 $("#navBtn").click(function() {
 		$("nav").slideToggle();
 		$(this).toggleClass("navActive");
-
-
 }); //click method end
 
 
@@ -40,6 +33,12 @@ $("#navBtn").click(function() {
 		var sliderTotal = $("ul.slider-train li").size();
 		console.log(sliderTotal);
 
+
+	$("nav ul li").hover(function() {
+		$(this).find("ul").show();
+	}, function() {
+		$(this).find("ul").hide()
+	}); //hover method end
 
 
 
@@ -115,4 +114,3 @@ resizePhotolinks(); //need to put on the outside of the function so it gets call
 
 
 }); //get ready method
-

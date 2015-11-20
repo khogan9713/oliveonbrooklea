@@ -14,18 +14,28 @@ nav {
 nav ul li {
 	border-bottom: 1px solid purple;
 	background-color: lavender;
+	/*display: inline-block;
+	position: relative;
+	line-height: 50px;*/
 }
 
 nav ul li a {
 	font-family: 'Raleway', Arial, sans-serif;
 	font-size: 18px;
 	padding: 10px;
+	padding-left: 20px;
 	text-decoration: none;
 	text-transform:  uppercase;
-	padding-left: 20px;
 	display: block;
 	color: purple;
+}
 
+nav ul ul li {
+	display: none;
+}
+
+nav ul li a:active {
+	color: olive;
 }
 
 #navBtn {
@@ -38,12 +48,8 @@ nav ul li a {
 	right: 10px;
 	text-align: center;
 	color: purple;
-	/*border: 1px solid black*/
 }
 
-/*#navBtn a:active {
-	color: black;
-}*/
 
 .navActive {
   background-color: olive;
@@ -107,6 +113,30 @@ p {
 	line-height: 30px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+p.quote {
+	font-style: italic;
+	font-size: 18px;
+}
+
+
+p.aboutText {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mainAboutImage {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 15px;
+}
+
+.aboutContainer {
+	margin: 0 auto;
+	width: 85%;
+	margin-top: 75px;
+	margin-bottom: 50px;
 }
 
 p.location {
@@ -254,7 +284,7 @@ ul.slider-train li p {
 
 .gridspace {
 	min-height: 1400px;
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	padding-left: 25px;
 	display: block;
 }
@@ -266,8 +296,8 @@ ul.slider-train li p {
 .gridspace h3, .sliderspace h3 {
 	font-size: 26px;
 	padding: 20px;
-	background-color: olive;
-	color: white;
+	/*background-color: olive;*/
+	color: black;
 }
 
 	.gridspace p {
@@ -349,6 +379,39 @@ main img {
 header img {
 	float: left;
 }
+body {
+	position: relative;
+}
+nav {
+	position: absolute;
+}
+
+nav ul ul {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50px;
+	left: 0px;
+}
+
+nav ul ul li {
+	display: block;
+	height: 50px;
+	border-bottom: 2px dotted purple;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li a:hover {
+	color: olive;
+}
+
+nav ul ul li a {
+	font-size: 12px;
+	color: purple;
+}
 
 .navcontainer {
 	height: 143px;
@@ -374,6 +437,34 @@ nav ul li a {
 	padding-left: 5px;
 	display: block;
 
+}
+
+/*desktop*/
+nav {
+	display: inline-block;
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li a {
+	padding: 0px;
+}
+
+nav ul li a:hover {
+	color: olive;
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+	line-height: 50px;
 }
 
 #contact {
@@ -463,10 +554,7 @@ aside {
 
 .gridspace {
 	min-height: 800px;
-	/*padding-top: 20px;
-	padding-bottom: 20px;*/
 	display: block;
-	/*background-color:red;*/
 }
 
 
@@ -478,9 +566,7 @@ header img {
 	float: left;
 	padding-left: 100px;
 }
-nav ul {
-	float: right;
-}
+
 
 #contact {
 	padding-right: 100px;
