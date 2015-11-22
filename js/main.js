@@ -9,6 +9,7 @@ $("#navBtn").click(function() {
 }); //click method end
 
 
+
 //image hover styles
 		$(".gridstyle").hover(function() {
 			$(this).find("img").animate({
@@ -111,6 +112,34 @@ $(window).resize(function () {
 }); //resize
 
 resizePhotolinks(); //need to put on the outside of the function so it gets called no matter what
+
+
+var imageHeight, h1Height, imageTop;
+
+function resizeMainImage() {
+	imageHeight = $(".mainimage").height();
+	h1Height = $(".mainimage h1").height();
+	imageTop = (imageHeight - h1Height)/2;
+	$(".mainimage h1").css({
+		"top" : imageTop
+
+	}); //css
+
+} //resize main image
+
+$(window).resize(function () {
+	resizeMainImage();
+
+	}); //resize
+
+resizeMainImage();
+
+
+
+
+
+
+
 
 
 }); //get ready method
