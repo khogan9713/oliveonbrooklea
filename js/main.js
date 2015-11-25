@@ -10,7 +10,7 @@ $("#navBtn").click(function() {
 
 
 
-//image hover styles
+//image hover styles for product and recipe page
 		$(".gridstyle").hover(function() {
 			$(this).find("img").animate({
 				"width": "320px",
@@ -43,6 +43,37 @@ $("#navBtn").click(function() {
 
 
 
+//image hover styles for main page
+ if($(window).width() >= 980){  
+        // do something
+
+		$(".photolinks").hover(function() {
+			$(this).find("img").animate({
+				"width" : "320px",
+				"height" : "214px",
+				"top" : "-10px",
+				"left" : "-10px",
+				"opacity" : 0.6
+			}); //animate
+		}, function() {
+			$(this).find("img").animate({
+				"width" : "300px",
+				"height" : "194px",
+				"top" : "0px",
+				"left" : "0px",
+				"opacity" : 1.0
+			}); //animate
+		}); //hover 
+
+    }   
+
+/*$(window).resize(function() {
+   if($(window).width() < 500) {
+   	$("body").css({
+   		"background-color" : "blue"
+   	}); //css
+   }
+});*/
 
 //product slider
 	/*var clickCount=0;
