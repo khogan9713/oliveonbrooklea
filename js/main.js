@@ -67,6 +67,12 @@ $("#navBtn").click(function() {
 
     }   
 
+
+/*var map = new google.maps.Map();
+function initialize() {
+
+}*/
+
 /*$(window).resize(function() {
    if($(window).width() < 500) {
    	$("body").css({

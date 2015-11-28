@@ -15,12 +15,13 @@ header img {
 
 nav {
 	width: 100%;
+	display: none;
 	  ul li {
 	    	border-bottom: 1px solid purple;
-      	background-color: lavender;
-      	/*display: inline-block;
-      	position: relative;
-      	line-height: 50px;*/
+	      	background-color: lavender;
+	      	/*display: inline-block;
+	      	position: relative;
+	      	line-height: 50px;*/
           	a {
             	font-family: $headerfonts; 
             	font-size: 18px;
@@ -37,7 +38,7 @@ nav {
 nav ul ul {
 	width: 100%;
 	display: none;
-	  li {
+		li {
     	border-bottom: 0px;
       	display: block;
 	      a {
@@ -119,18 +120,17 @@ a {
 
 .showcase {
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-right: 20px;
 }
 
 .containerproducts {
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-right: 20px;
-}
-
-.containerproducts img {
-	width: 100%;
+	img {
+		width: 100%;
+	}
 }
 
 h2 {
@@ -140,7 +140,7 @@ h2 {
 	font-size: 30px;
 	color: #4d004c;
 	margin-bottom: 30px;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 h3 {
@@ -185,42 +185,47 @@ p.aboutText {
 	margin-top: 75px;
 	margin-bottom: 50px;
 }
-
+/*-------------------------------Location Aside------------------------*/
 p.location {
 	margin-top: 15px;
 	margin-bottom: 0px;
 	font-weight: bold;
-}
-
-aside p, aside time {
-	margin-top: 10px;
-	margin-bottom: 0px;
-	line-height: 25px;
-}
-
-aside h3 {
-	font-family: $headerfonts;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.clearfix {
-	clear: both;
-	width:100%;
+	font-size: 16px;
 }
 
 aside {
 	background-color: lavender;
-}
-.address, .hours {
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 10px;
-	padding-top: 5px;
+	p, time {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		line-height: 30px;
+	}
+	h2 {
+		padding-top: 20px;
+	}	
+	h3 {
+		font-family: $headerfonts;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 14px;
+	}
+	.address, .hours {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+		padding-top: 0px;
+	}
+
 }
 
-/* three images on main page---------------- */
+.clearfix {
+	clear: both;
+	width: 100%;
+}
+
+
+
+/*----------------------- three images on main page---------------- */
 
 .threeimages {
 	width: 350px;
@@ -240,28 +245,28 @@ aside {
 	padding-bottom: 20px;*/
 	/*float: left;*/
 	display: inline-block;
-}
 
-.photolinks img {
-	width: 100%;
-	/*min-height: 80%;*/
-	/*position: absolute;*/
-	/*padding-left: 40px;*/
-}
+	img {
+		width: 100%;
+		/*min-height: 80%;*/
+		/*position: absolute;*/
+		/*padding-left: 40px;*/
+	}
 
-.photolinks h3 {
-	font-family: $headerfonts;
-	font-weight: 600;
-	font-size: 30px;
-	text-transform: uppercase;
-	color: white;
-	text-shadow: 1px 1px black;
-	position: absolute;
-	z-index: 500;
-	/*height: 197px;*/
-	/*padding-left: 140px;*/
-	width: 100%;
-	text-align: center;
+	h3 {
+		font-family: $headerfonts;
+		font-weight: 600;
+		font-size: 30px;
+		text-transform: uppercase;
+		color: white;
+		text-shadow: 1px 1px black;
+		position: absolute;
+		z-index: 500;
+		/*height: 197px;*/
+		/*padding-left: 140px;*/
+		width: 100%;
+		text-align: center;
+	}
 }
 
 h4 {
@@ -382,6 +387,55 @@ ul.slider-train li p {
 	display: inline;
 	/*z-index: 1;*/
 }
+
+/*----------------------CONTACT US PAGE------------*/
+
+.form {
+	font-size: 40px;
+	height: 500px;
+}
+
+input {
+		width: 100%;
+		height: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font: $pfonts;
+		font-size: 16px;
+		padding-left: 3%;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font: $pfonts;
+	font-size: 16px;
+	padding-left: 3%;
+	padding-top: 1%;
+}
+
+.form input[type="submit"],
+.form input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: olive;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover{
+    background: purple;
+}
+
+/*------------------------------footer-------------------*/
 
 footer {
 	width: 100%;
@@ -519,7 +573,7 @@ nav ul li:hover ul {
 	width: 60%;
 	float: left;
 }
-
+/*----------------------CONTACT US PAGE------------*/
 .form {
 	font-size: 40px;
 	height: 500px;
@@ -567,16 +621,23 @@ textarea {
 
 aside {
 	width: 33%;
+	height: 570px;
 	float: right;
-	background-color: pink;
+	background-color: white;
 	h2 {
-		margin-top: 50px;
+		margin-top: 40px;
+		padding-top: 0px;
+	}
+	#map {
+		width: 100%;
+		height: 70%;
+		background-color: black;
 	}
 }
 
 .address, .hours {
 	background-color: white;
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 5px;
@@ -616,10 +677,11 @@ p.aboutText {
 
 .footerfay, .footerdown {
 	display: inline-block;
+	padding-top: 50px;
 }
 
 footer #copyright {
-	padding-top: 150px;
+	padding-top: 50px;
 }
 
 /*.threeimages {
