@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'fonts';
 @import 'bourbon/bourbon';
+@import 'color';
 
 
 @media all and (min-width: 320px) {
@@ -17,7 +18,7 @@ nav {
 	width: 100%;
 	display: none;
 	  ul li {
-	    	border-bottom: 1px solid purple;
+	    	border-bottom: 1px solid $purple;
 	      	background-color: lavender;
 	      	/*display: inline-block;
 	      	position: relative;
@@ -29,7 +30,7 @@ nav {
             	padding-left: 20px;
             	text-decoration: none;
             	text-transform:  uppercase;
-            	color: purple;
+            	color: $purple;
             	display: block;
           		}
 	 	 	}
@@ -74,7 +75,7 @@ a {
 	top: 40px;
 	right: 10px;
 	text-align: center;
-	color: purple;
+	color: $purple;
 }
 
 
@@ -138,16 +139,15 @@ h2 {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 30px;
-	color: #4d004c;
+	color: $purple;
 	margin-bottom: 30px;
-	/*margin-top: 30px;*/
 }
 
 h3 {
 	font-family: $headerfonts;
 	font-weight: 700;
 	font-size: 20px;
-	color: #4d004c;
+	color: $purple;
 	/*margin-bottom: 30px;
 	margin-top: 30px;*/
 }
@@ -194,7 +194,7 @@ p.location {
 }
 
 aside {
-	background-color: lavender;
+	background-color: white;
 	p, time {
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -209,11 +209,22 @@ aside {
 		font-weight: 600;
 		font-size: 14px;
 	}
-	.address, .hours {
+	.address, .hours, .mapbox {
 		padding-left: 20px;
 		padding-right: 20px;
 		padding-bottom: 10px;
 		padding-top: 0px;
+	}
+	#map {
+		width: 350px;
+		height: 350px;
+		background-color: black;
+		margin: auto;
+		margin-bottom: 20px;
+	} //for the map on contact page
+	#directionslink {
+		text-decoration: none;
+		color: black;
 	}
 
 }
@@ -392,7 +403,7 @@ ul.slider-train li p {
 
 .form {
 	font-size: 40px;
-	height: 500px;
+	height: 360px;
 }
 
 input {
@@ -400,7 +411,7 @@ input {
 		height: 40px;
 		margin-top: 10px;
 		margin-bottom: 10px;
-		font: $pfonts;
+		font-family: $pfonts;
 		font-size: 16px;
 		padding-left: 3%;
 }
@@ -410,7 +421,7 @@ textarea {
 	height: 150px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font: $pfonts;
+	font-family: $pfonts;
 	font-size: 16px;
 	padding-left: 3%;
 	padding-top: 1%;
@@ -422,9 +433,8 @@ textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    padding: 3%;
+    /*padding: 3%;*/
     background: olive;
-    border-bottom: 2px solid #30C29E;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;    
@@ -432,7 +442,7 @@ textarea {
 }
 .form input[type="submit"]:hover,
 .form input[type="button"]:hover{
-    background: purple;
+    background: $purple;
 }
 
 /*------------------------------footer-------------------*/
@@ -440,7 +450,7 @@ textarea {
 footer {
 	width: 100%;
 	height: 420px;
-	background-color: #4d004c;
+	background-color: $purple;
 }
 
 footer .buttons {
@@ -574,7 +584,7 @@ nav ul li:hover ul {
 	float: left;
 }
 /*----------------------CONTACT US PAGE------------*/
-.form {
+/*.form {
 	font-size: 40px;
 	height: 500px;
 }
@@ -608,7 +618,6 @@ textarea {
     width: 100%;
     padding: 3%;
     background: olive;
-    border-bottom: 2px solid #30C29E;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;    
@@ -616,8 +625,8 @@ textarea {
 }
 .form input[type="submit"]:hover,
 .form input[type="button"]:hover{
-    background: purple;
-}
+    background: $purple;
+}*/
 
 aside {
 	width: 33%;
@@ -629,9 +638,10 @@ aside {
 		padding-top: 0px;
 	}
 	#map {
-		width: 100%;
-		height: 70%;
+		width: 90%;
+		height: 65%;
 		background-color: black;
+		margin-right: 10%;
 	}
 }
 
@@ -817,6 +827,11 @@ nav ul li {
 	padding-bottom: 20px;*/
 	display: block;
 	/*background-color:red;*/
+}
+
+aside #map {
+	width: 100%;
+	margin-right: 0%;
 }
 footer {
 	width: 100%;

@@ -56,7 +56,7 @@ table {
     width: 100%;
     display: none; }
     nav ul li {
-      border-bottom: 1px solid purple;
+      border-bottom: 1px solid #4d004c;
       background-color: lavender;
       /*display: inline-block;
       position: relative;
@@ -68,7 +68,7 @@ table {
         padding-left: 20px;
         text-decoration: none;
         text-transform: uppercase;
-        color: purple;
+        color: #4d004c;
         display: block; }
 
   nav ul ul {
@@ -102,7 +102,7 @@ table {
     top: 40px;
     right: 10px;
     text-align: center;
-    color: purple; }
+    color: #4d004c; }
 
   .navActive {
     background-color: olive; }
@@ -154,8 +154,7 @@ table {
     font-weight: 700;
     font-size: 30px;
     color: #4d004c;
-    margin-bottom: 30px;
-    /*margin-top: 30px;*/ }
+    margin-bottom: 30px; }
 
   h3 {
     font-family: "Raleway", Arial, sans-serif;
@@ -201,7 +200,7 @@ table {
     font-size: 16px; }
 
   aside {
-    background-color: lavender; }
+    background-color: white; }
     aside p, aside time {
       margin-top: 0px;
       margin-bottom: 0px;
@@ -213,11 +212,20 @@ table {
       text-transform: uppercase;
       font-weight: 600;
       font-size: 14px; }
-    aside .address, aside .hours {
+    aside .address, aside .hours, aside .mapbox {
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 10px;
       padding-top: 0px; }
+    aside #map {
+      width: 350px;
+      height: 350px;
+      background-color: black;
+      margin: auto;
+      margin-bottom: 20px; }
+    aside #directionslink {
+      text-decoration: none;
+      color: black; }
 
   .clearfix {
     clear: both;
@@ -371,14 +379,14 @@ table {
   /*----------------------CONTACT US PAGE------------*/
   .form {
     font-size: 40px;
-    height: 500px; }
+    height: 360px; }
 
   input {
     width: 100%;
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font: "Merriweather", serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     padding-left: 3%; }
 
@@ -387,7 +395,7 @@ table {
     height: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font: "Merriweather", serif;
+    font-family: "Merriweather", serif;
     font-size: 16px;
     padding-left: 3%;
     padding-top: 1%; }
@@ -398,9 +406,8 @@ table {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    padding: 3%;
+    /*padding: 3%;*/
     background: olive;
-    border-bottom: 2px solid #30C29E;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
@@ -408,7 +415,7 @@ table {
 
   .form input[type="submit"]:hover,
   .form input[type="button"]:hover {
-    background: purple; }
+    background: #4d004c; }
 
   /*------------------------------footer-------------------*/
   footer {
@@ -518,47 +525,49 @@ table {
     float: left; }
 
   /*----------------------CONTACT US PAGE------------*/
-  .form {
-    font-size: 40px;
-    height: 500px; }
-
+  /*.form {
+  	font-size: 40px;
+  	height: 500px;
+  }
+  
   input {
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: "Merriweather", serif;
-    font-size: 16px;
-    padding-left: 3%; }
-
+  		width: 100%;
+  		height: 40px;
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		font: $pfonts;
+  		font-size: 16px;
+  		padding-left: 3%;
+  }
+  
   textarea {
-    width: 100%;
-    height: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font: "Merriweather", serif;
-    font-size: 16px;
-    padding-left: 3%;
-    padding-top: 1%; }
-
+  	width: 100%;
+  	height: 150px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  	font: $pfonts;
+  	font-size: 16px;
+  	padding-left: 3%;
+  	padding-top: 1%;
+  }
+  
   .form input[type="submit"],
-  .form input[type="button"] {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 100%;
-    padding: 3%;
-    background: olive;
-    border-bottom: 2px solid #30C29E;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;
-    color: #fff; }
-
+  .form input[type="button"]{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      padding: 3%;
+      background: olive;
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;    
+      color: #fff;
+  }
   .form input[type="submit"]:hover,
-  .form input[type="button"]:hover {
-    background: purple; }
-
+  .form input[type="button"]:hover{
+      background: $purple;
+  }*/
   aside {
     width: 33%;
     height: 570px;
@@ -568,9 +577,10 @@ table {
       margin-top: 40px;
       padding-top: 0px; }
     aside #map {
-      width: 100%;
-      height: 70%;
-      background-color: black; }
+      width: 90%;
+      height: 65%;
+      background-color: black;
+      margin-right: 10%; }
 
   .address, .hours {
     background-color: white;
@@ -725,6 +735,10 @@ table {
     padding-bottom: 20px;*/
     display: block;
     /*background-color:red;*/ }
+
+  aside #map {
+    width: 100%;
+    margin-right: 0%; }
 
   footer {
     width: 100%; }
