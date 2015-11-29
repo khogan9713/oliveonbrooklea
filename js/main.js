@@ -30,17 +30,31 @@ $("#navBtn").click(function() {
 		}); //hover
 
 
-		var clickCount=0;
+		/*var clickCount=0;
 		var sliderTotal = $("ul.slider-train li").size();
-		console.log(sliderTotal);
+		console.log(sliderTotal);*/
 
+if($(window).width() >= 980) {  
 
 	$("nav ul li").hover(function() {
 		$(this).find("ul").show();
 	}, function() {
 		$(this).find("ul").hide()
 	}); //hover method end
+} 
 
+/*if($(window).width() < 980){  
+	$("nav ul li").click(function() {
+		$(this).find("ul").show();
+	}, function() {
+		$(this).find("ul").hide()
+	}); //hover method end
+} doesn't work */
+
+$("nav ul li").click(function() {
+		$("nav ul li ul").slideToggle();
+		$(this).toggleClass();
+}); //click method end
 
 
 //image hover styles for main page
@@ -64,8 +78,7 @@ $("#navBtn").click(function() {
 				"opacity" : 1.0
 			}); //animate
 		}); //hover 
-
- 	}    
+} // window width if statement
 
 
 
@@ -73,7 +86,8 @@ $("#navBtn").click(function() {
 /*var downLocation = new google.maps.LatLng(43.0470706, -76.1528260);*/
 /*function initialize() {*/
 
-var locations = [
+//ASK JEFF ABOUT THIS
+/*var locations = [
 	['Fayetteville Location,', 43.031101, -76.012660],
 	['Downtown Location', 43.0470706, -76.1528260]
 ];
